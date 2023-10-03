@@ -1,0 +1,17 @@
+# Misc
+.DS_Store
+
+# Editor
+.vscode
+.idea
+
+# Dependencies
+node_modules
+
+# Logs
+logs
+*.log
+.pnpm-debug.log*
+
+# Turborepo
+.turbo
