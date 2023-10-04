@@ -5,7 +5,7 @@
 [![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/agaroot-technologies/eslint-config/blob/main/packages/react/LICENSE)
 [![Github](https://img.shields.io/github/followers/agaroot-technologies?label=Follow&logo=github&style=social)](https://github.com/orgs/agaroot-technologies/followers)
 
-This is a ESLint config commonly inherited by Agaroot products.
+This is a ESLint config commonly inherited by AGAROOT products.
 
 Use this setting to ensure consistent code writing and maintain high code quality.
 
