@@ -2,7 +2,7 @@
   "name": "@agaroot/eslint-config",
   "version": "1.0.0",
   "private": true,
-  "description": "ESLint config for Agaroot",
+  "description": "ESLint config for AGAROOT",
   "homepage": "https://github.com/agaroot-technologies/eslint-config",
   "bugs": {
     "url": "https://github.com/agaroot-technologies/eslint-config/issues"
