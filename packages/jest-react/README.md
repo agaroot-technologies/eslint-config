@@ -31,7 +31,7 @@ module.exports = {
 };
 ```
 
-If you are using TypeScript, you need to add the parserOptions.
+If you are using TypeScript, you need to add the parserOptions and import/resolver settings.
 
 ```js
 module.exports = {
@@ -41,6 +41,13 @@ module.exports = {
   ],
   parserOptions: {
     project: './tsconfig.json',
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project: './tsconfig.json',
+      },
+    },
   },
 };
 ```
