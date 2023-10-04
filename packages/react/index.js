@@ -9,6 +9,11 @@ module.exports = {
   env: {
     browser: true,
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
     'react/function-component-definition': ['error', {
       'namedComponents': 'arrow-function',
