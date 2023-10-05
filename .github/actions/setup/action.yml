@@ -5,7 +5,7 @@ runs:
   using: composite
   steps:
     - name: Setup pnpm
-      uses: pnpm/action-setup@d2613e087f2e0aa841925861c5a5f7395d552177
+      uses: pnpm/action-setup@d882d12c64e032187b2edb46d3a0d003b7a43598 # v2.4.0
 
     - name: Expose pnpm store path
       id: pnpm_store_path
@@ -13,7 +13,7 @@ runs:
       run: |
         echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-    - uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84
+    - uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 # v3.3.2
       name: Setup pnpm cache
       with:
         path: ${{ steps.pnpm_store_path.outputs.STORE_PATH }}

@@ -14,7 +14,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
         with:
           fetch-depth: 0
 
@@ -22,7 +22,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Create release pull request or publish to npm
-        uses: changesets/action@2bb9bcbd6bf4996a55ce459a630a0aa699457f59
+        uses: changesets/action@f13b1baaa620fde937751f5d2c3572b9da32af23 # v1.4.5
         with:
           publish: pnpm run version:publish
         env:
