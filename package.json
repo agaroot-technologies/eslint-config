@@ -12,5 +12,11 @@
     "url": "git+https://github.com/agaroot-technologies/eslint-config.git"
   },
   "license": "MIT",
+  "scripts": {
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "1.10.14"
+  },
   "packageManager": "pnpm@8.8.0"
 }
