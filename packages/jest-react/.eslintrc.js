@@ -1,6 +1,8 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: './index.js',
+  extends: [
+    '@agaroot/eslint-config-common',
+  ],
   env: {
     node: true,
   },

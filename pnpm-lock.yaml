@@ -40,11 +40,10 @@ importers:
         version: 3.0.0(@typescript-eslint/eslint-plugin@6.7.4)(eslint@8.50.0)
 
   packages/jest:
-    dependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:^
-        version: link:../common
     devDependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@typescript-eslint/eslint-plugin':
         specifier: 6.7.4
         version: 6.7.4(@typescript-eslint/parser@6.7.4)(eslint@8.50.0)(typescript@5.2.2)
@@ -68,11 +67,10 @@ importers:
         version: 3.0.0(@typescript-eslint/eslint-plugin@6.7.4)(eslint@8.50.0)
 
   packages/jest-react:
-    dependencies:
-      '@agaroot/eslint-config-jest':
-        specifier: workspace:^
-        version: link:../jest
     devDependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@typescript-eslint/eslint-plugin':
         specifier: 6.7.4
         version: 6.7.4(@typescript-eslint/parser@6.7.4)(eslint@8.50.0)(typescript@5.2.2)
@@ -102,11 +100,10 @@ importers:
         version: 3.0.0(@typescript-eslint/eslint-plugin@6.7.4)(eslint@8.50.0)
 
   packages/next:
-    dependencies:
-      '@agaroot/eslint-config-react':
-        specifier: workspace:^
-        version: link:../react
     devDependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@next/eslint-plugin-next':
         specifier: 13.5.4
         version: 13.5.4
@@ -139,11 +136,10 @@ importers:
         version: 3.0.0(@typescript-eslint/eslint-plugin@6.7.4)(eslint@8.50.0)
 
   packages/react:
-    dependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:^
-        version: link:../common
     devDependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@typescript-eslint/eslint-plugin':
         specifier: 6.7.4
         version: 6.7.4(@typescript-eslint/parser@6.7.4)(eslint@8.50.0)(typescript@5.2.2)
