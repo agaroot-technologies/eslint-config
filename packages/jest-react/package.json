@@ -26,6 +26,9 @@
     "LICENSE",
     "README.md"
   ],
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "@agaroot/eslint-config-jest": "workspace:^"
   },
