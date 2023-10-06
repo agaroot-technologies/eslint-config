@@ -23,6 +23,7 @@ $ npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser esli
 Create a `.eslintrc.js` file in the root directory of your project, and add `@agaroot/eslint-config-common` to the `extends` array.
 
 ```js
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: [
@@ -34,6 +35,7 @@ module.exports = {
 If you are using TypeScript, you need to add the parserOptions and import/resolver settings.
 
 ```js
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: [

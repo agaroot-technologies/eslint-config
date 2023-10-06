@@ -15,28 +15,21 @@ Use this setting to ensure consistent code writing and maintain high code qualit
 $ npm install -D @agaroot/eslint-config-jest
 
 # Needs install peer dependencies
-$ npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-jest eslint-plugin-unused-imports
+$ npm install -D eslint-plugin-jest
 ```
 
 ## 👏 Getting Started
 
 Create a `.eslintrc.js` file in the root directory of your project, and add `@agaroot/eslint-config-jest` to the `extends` array.
 
+The following is the recommended configuration when using TypeScript.
+
 ```js
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: [
-    '@agaroot/eslint-config-jest',
-  ],
-};
-```
-
-If you are using TypeScript, you need to add the parserOptions and import/resolver settings.
-
-```js
-module.exports = {
-  root: true,
-  extends: [
+    '@agaroot/eslint-config-common',
     '@agaroot/eslint-config-jest',
   ],
   parserOptions: {

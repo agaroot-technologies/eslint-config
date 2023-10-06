@@ -101,5 +101,15 @@ module.exports = {
         '@typescript-eslint/space-infix-ops': ['error', { 'int32Hint': false }],
       },
     },
+    {
+      files: [
+        '*.test.{js,jsx,ts,tsx}',
+        '**/__tests__/**',
+      ],
+      rules: {
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/prefer-ts-expect-error': 'off',
+      },
+    },
   ],
 };
