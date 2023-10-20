@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-jest
 
+## 2.1.0
+
+### Minor Changes
+
+- [#28](https://github.com/agaroot-technologies/eslint-config/pull/28) [`fa96111`](https://github.com/agaroot-technologies/eslint-config/commit/fa96111cac549417400b7d052ce247a2a8c91047) Thanks [@Karibash](https://github.com/Karibash)! - Add a eslint-plugin-unicorn
+
 ## 2.0.0
 
 ### Major Changes
