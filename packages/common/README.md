@@ -15,7 +15,7 @@ Use this setting to ensure consistent code writing and maintain high code qualit
 $ npm install -D @agaroot/eslint-config-common
 
 # Needs install peer dependencies
-$ npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-unused-imports
+$ npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-unicorn eslint-plugin-unused-imports
 ```
 
 ## 👏 Getting Started

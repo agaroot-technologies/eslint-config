@@ -22,14 +22,14 @@
     "url": "git+https://github.com/agaroot-technologies/eslint-config.git"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.cjs",
   "files": [
-    "index.js",
+    "index.cjs",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint . --ext .js,.cjs"
   },
   "devDependencies": {
     "@agaroot/eslint-config-common": "workspace:*",
