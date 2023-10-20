@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
+    'plugin:unicorn/recommended',
   ],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
