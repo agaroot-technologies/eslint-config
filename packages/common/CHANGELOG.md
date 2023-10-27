@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-common
 
+## 2.1.1
+
+### Patch Changes
+
+- [#36](https://github.com/agaroot-technologies/eslint-config/pull/36) [`3f4e2a6`](https://github.com/agaroot-technologies/eslint-config/commit/3f4e2a6ff009c7bd8554a10dc65e8852249b5a51) Thanks [@gn-t-k](https://github.com/gn-t-k)! - Disable rule unicorn/no-array-reduce.
+
 ## 2.1.0
 
 ### Minor Changes
