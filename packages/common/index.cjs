@@ -47,6 +47,7 @@ module.exports = {
       'pathGroupsExcludedImportTypes': ['builtin'],
       'alphabetize': { 'order': 'asc', 'caseInsensitive': true },
     }],
+    'unicorn/no-array-reduce': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'warn',
