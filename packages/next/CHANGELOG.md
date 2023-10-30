@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-next
 
+## 2.1.1
+
+### Patch Changes
+
+- [#35](https://github.com/agaroot-technologies/eslint-config/pull/35) [`9fe4d73`](https://github.com/agaroot-technologies/eslint-config/commit/9fe4d73d864f64bec53fc74a46a04fc394fe6182) Thanks [@renovate](https://github.com/apps/renovate)! - Update dependency @next/eslint-plugin-next to v14
+
 ## 2.1.0
 
 ### Minor Changes
