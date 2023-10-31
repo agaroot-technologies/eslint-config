@@ -1,5 +1,13 @@
 # @agaroot/eslint-config-jest
 
+## 2.1.1
+
+### Patch Changes
+
+- [#44](https://github.com/agaroot-technologies/eslint-config/pull/44) [`9653cc3`](https://github.com/agaroot-technologies/eslint-config/commit/9653cc3ecbaf5c5e8aed2d79248c109cf0d229e0) Thanks [@Karibash](https://github.com/Karibash)! - Fix filename rules to apply eslint-plugin-jest
+
+- [#46](https://github.com/agaroot-technologies/eslint-config/pull/46) [`28b2455`](https://github.com/agaroot-technologies/eslint-config/commit/28b2455e81e9c3f94a5f61c1b4e2a1cb81890b15) Thanks [@Karibash](https://github.com/Karibash)! - Make the jest/unbound-method rule effective
+
 ## 2.1.0
 
 ### Minor Changes
