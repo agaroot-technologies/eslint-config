@@ -4,7 +4,7 @@ module.exports = {
     {
       files: [
         '*.test.{js,jsx,ts,tsx}',
-        '**/__tests__/**',
+        '**/__tests__/**/*.{js,jsx,ts,tsx}',
       ],
       env: {
         jest: true,
