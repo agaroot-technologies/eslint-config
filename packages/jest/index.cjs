@@ -13,5 +13,15 @@ module.exports = {
         'plugin:jest/recommended',
       ],
     },
+    {
+      files: [
+        '*.test.{ts,tsx}',
+        '**/__tests__/**/*.{ts,tsx}',
+      ],
+      rules: {
+        '@typescript-eslint/unbound-method': 'off',
+        'jest/unbound-method': 'error',
+      },
+    },
   ],
 };
