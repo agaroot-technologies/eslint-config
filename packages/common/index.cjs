@@ -48,6 +48,14 @@ module.exports = {
       'alphabetize': { 'order': 'asc', 'caseInsensitive': true },
     }],
     'unicorn/no-array-reduce': 'off',
+    'unicorn/prevent-abbreviations': ['error', {
+      'replacements': {
+        // Allow the use of this abbreviation when defining the types of component properties in React, as it is used extensively.
+        'props': false,
+        // Allow the use of this abbreviation when retrieving DOM references in React, as it is used extensively.
+        'ref': false,
+      },
+    }],
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'warn',
