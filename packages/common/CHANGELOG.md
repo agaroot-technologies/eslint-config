@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-common
 
+## 2.1.4
+
+### Patch Changes
+
+- [#54](https://github.com/agaroot-technologies/eslint-config/pull/54) [`14b9570`](https://github.com/agaroot-technologies/eslint-config/commit/14b9570a603c2de2a58ada6ed262ce56ac9ff6b3) Thanks [@Karibash](https://github.com/Karibash)! - Make it possible to use abbreviations for "environment"
+
 ## 2.1.3
 
 ### Patch Changes
