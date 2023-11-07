@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-common
 
+## 2.1.3
+
+### Patch Changes
+
+- [#51](https://github.com/agaroot-technologies/eslint-config/pull/51) [`72166b2`](https://github.com/agaroot-technologies/eslint-config/commit/72166b290302e1498e4086b81484ec3aa05ca44d) Thanks [@Karibash](https://github.com/Karibash)! - Add rules to allow the use of commonly used abbreviations
+
 ## 2.1.2
 
 ### Patch Changes
