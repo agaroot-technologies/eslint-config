@@ -62,11 +62,15 @@ module.exports = {
         'ref': false,
       },
     }],
+    // Disallow unused imports.
     'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      { 'vars': 'all', 'varsIgnorePattern': '^_', 'args': 'after-used', 'argsIgnorePattern': '^_' },
-    ],
+    // Disallow unused variables and arguments, but allow them if they are prefixed with "_".
+    'unused-imports/no-unused-vars': ['error', {
+      'vars': 'all',
+      'varsIgnorePattern': '^_',
+      'args': 'after-used',
+      'argsIgnorePattern': '^_',
+    }],
   },
   overrides: [
     {
