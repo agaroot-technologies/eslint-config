@@ -47,7 +47,11 @@ module.exports = {
       'pathGroupsExcludedImportTypes': ['builtin'],
       'alphabetize': { 'order': 'asc', 'caseInsensitive': true },
     }],
+    // Allow the use of the Array.reduce method because of the preference for functional programming.
     'unicorn/no-array-reduce': 'off',
+    // Allow null to be used because some libraries have different meanings for null and undefined.
+    'unicorn/no-null': 'off',
+    // Loosen some overly strict prevent abbreviation rules.
     'unicorn/prevent-abbreviations': ['error', {
       'replacements': {
         // Allow the use of this abbreviation when retrieving environment variables in Node.js, as it is used extensively.
