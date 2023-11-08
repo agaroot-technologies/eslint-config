@@ -1,5 +1,13 @@
 # @agaroot/eslint-config-common
 
+## 2.1.5
+
+### Patch Changes
+
+- [#58](https://github.com/agaroot-technologies/eslint-config/pull/58) [`fb1621c`](https://github.com/agaroot-technologies/eslint-config/commit/fb1621c2e0c6b6353e0b6911f839e15c166953f9) Thanks [@Karibash](https://github.com/Karibash)! - Change the severity of unused variables from warning to error
+
+- [#56](https://github.com/agaroot-technologies/eslint-config/pull/56) [`6cb9044`](https://github.com/agaroot-technologies/eslint-config/commit/6cb90442cf65b4539d9fbe7835fed41645a25cff) Thanks [@Karibash](https://github.com/Karibash)! - Make null available
+
 ## 2.1.4
 
 ### Patch Changes
