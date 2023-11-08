@@ -47,6 +47,8 @@ module.exports = {
       'pathGroupsExcludedImportTypes': ['builtin'],
       'alphabetize': { 'order': 'asc', 'caseInsensitive': true },
     }],
+    // Allow the use of the Array.forEach method because the reason of unicorn is unclear.
+    'unicorn/no-array-for-each': 'off',
     // Allow the use of the Array.reduce method because of the preference for functional programming.
     'unicorn/no-array-reduce': 'off',
     // Allow null to be used because some libraries have different meanings for null and undefined.
