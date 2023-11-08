@@ -1,5 +1,13 @@
 # @agaroot/eslint-config-common
 
+## 2.1.6
+
+### Patch Changes
+
+- [#61](https://github.com/agaroot-technologies/eslint-config/pull/61) [`9545292`](https://github.com/agaroot-technologies/eslint-config/commit/9545292133cb8fd2cb18c19e447bc64324474155) Thanks [@Karibash](https://github.com/Karibash)! - Disable explicit-length-check rule
+
+- [#59](https://github.com/agaroot-technologies/eslint-config/pull/59) [`19f5aff`](https://github.com/agaroot-technologies/eslint-config/commit/19f5aff3ea316d6bf65a3745b3b33206f399f606) Thanks [@zack-msyc86](https://github.com/zack-msyc86)! - Disable rule no-array-for-each
+
 ## 2.1.5
 
 ### Patch Changes
