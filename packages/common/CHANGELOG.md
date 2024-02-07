@@ -1,5 +1,13 @@
 # @agaroot/eslint-config-common
 
+## 2.1.8
+
+### Patch Changes
+
+- [#122](https://github.com/agaroot-technologies/eslint-config/pull/122) [`ea8b5fa`](https://github.com/agaroot-technologies/eslint-config/commit/ea8b5fa6f5ee51e138f610a70d73795ca1a178af) Thanks [@Karibash](https://github.com/Karibash)! - Fix version specification of eslint-plugin-unicorn
+
+- [#119](https://github.com/agaroot-technologies/eslint-config/pull/119) [`21e39f4`](https://github.com/agaroot-technologies/eslint-config/commit/21e39f4bae10d3b575e75c5c045a9e1d621c93cd) Thanks [@renovate](https://github.com/apps/renovate)! - Update dependency eslint-plugin-unicorn to v51
+
 ## 2.1.7
 
 ### Patch Changes
