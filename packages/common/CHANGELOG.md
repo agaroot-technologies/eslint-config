@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-common
 
+## 2.1.9
+
+### Patch Changes
+
+- [#125](https://github.com/agaroot-technologies/eslint-config/pull/125) [`05a3754`](https://github.com/agaroot-technologies/eslint-config/commit/05a375470dd32982efd5d72349badf5e8897eb62) Thanks [@renovate](https://github.com/apps/renovate)! - Update typescript-eslint monorepo to v7
+
 ## 2.1.8
 
 ### Patch Changes
