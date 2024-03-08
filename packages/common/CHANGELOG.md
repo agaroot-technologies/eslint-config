@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-common
 
+## 2.1.10
+
+### Patch Changes
+
+- [#144](https://github.com/agaroot-technologies/eslint-config/pull/144) [`82f8e82`](https://github.com/agaroot-technologies/eslint-config/commit/82f8e824fd86b56045ad2d8b7b344451afc93bf7) Thanks [@Karibash](https://github.com/Karibash)! - Add a comma-spacing rule.
+
 ## 2.1.9
 
 ### Patch Changes
