@@ -10,6 +10,7 @@ module.exports = {
   ],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
+    'comma-spacing': ['error', { 'before': false, 'after': true }],
     'eol-last': ['error', 'always'],
     'func-style': ['error', 'expression'],
     'indent': ['error', 2, {
