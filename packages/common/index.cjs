@@ -12,6 +12,7 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': ['error', { 'before': false, 'after': true }],
     'eol-last': ['error', 'always'],
+    'func-call-spacing': ['error', 'never'],
     'func-style': ['error', 'expression'],
     'indent': ['error', 2, {
       'SwitchCase': 1,
