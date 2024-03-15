@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-common
 
+## 2.1.11
+
+### Patch Changes
+
+- [#147](https://github.com/agaroot-technologies/eslint-config/pull/147) [`438b8ff`](https://github.com/agaroot-technologies/eslint-config/commit/438b8ff58028184dfe5ef8ec1b77868ca6cec69c) Thanks [@kondo0602](https://github.com/kondo0602)! - Enforce no space before parens in function calls
+
 ## 2.1.10
 
 ### Patch Changes
