@@ -12,46 +12,22 @@ Use this setting to ensure consistent code writing and maintain high code qualit
 ## 🚀 Installation
 
 ```shell
-$ npm install -D @agaroot/eslint-config-common
-
-# Needs install peer dependencies
-$ npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-unicorn eslint-plugin-unused-imports
+npm install -D eslint @agaroot/eslint-config-common
 ```
 
 ## 👏 Getting Started
 
-Create a `.eslintrc.js` file in the root directory of your project, and add `@agaroot/eslint-config-common` to the `extends` array.
+Create a `eslint.config.js` file in the root directory of your project, and add `@agaroot/eslint-config-common`.
 
 ```js
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
-  root: true,
-  extends: [
-    '@agaroot/eslint-config-common',
-  ],
-};
-```
+import { common } from '@agaroot/eslint-config-common';
 
-If you are using TypeScript, you need to add the parserOptions and import/resolver settings.
+/** @type {import('eslint').Linter.FlatConfig[]} */
+const config = [
+  ...common(),
+];
 
-```js
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
-  root: true,
-  extends: [
-    '@agaroot/eslint-config-common',
-  ],
-  parserOptions: {
-    project: './tsconfig.json',
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {
-        project: './tsconfig.json',
-      },
-    },
-  },
-};
+export default config;
 ```
 
 ## 🤝 Contributing
