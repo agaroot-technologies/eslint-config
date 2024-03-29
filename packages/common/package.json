@@ -1,5 +1,6 @@
 {
   "name": "@agaroot/eslint-config-common",
+  "type": "module",
   "version": "2.1.12",
   "description": "ESLint config for AGAROOT",
   "keywords": [
@@ -16,17 +17,33 @@
     "url": "git+https://github.com/agaroot-technologies/eslint-config.git"
   },
   "license": "MIT",
-  "main": "index.cjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
   "files": [
-    "index.cjs",
+    "dist",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint . --ext .js,.cjs"
+    "build": "pkgroll",
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "8.57.0"
+    "@tsconfig/strictest": "2.0.5",
+    "@types/eslint": "8.56.11",
+    "eslint": "8.57.0",
+    "pkgroll": "2.4.1"
   },
   "peerDependencies": {
     "eslint": "^8.0.0"
