@@ -13,5 +13,8 @@ logs
 *.log
 .pnpm-debug.log*
 
+# TypeScript
+dist
+
 # Turborepo
 .turbo
