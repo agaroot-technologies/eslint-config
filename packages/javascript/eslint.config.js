@@ -1,6 +1,6 @@
-import { javascript } from '@agaroot/eslint-config-javascript';
+import { common } from '@agaroot/eslint-config-common';
 
-import { common } from './dist/index.mjs';
+import { javascript } from './dist/index.mjs';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 const config = [

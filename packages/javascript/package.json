@@ -1,14 +1,15 @@
 {
-  "name": "@agaroot/eslint-config-common",
+  "name": "@agaroot/eslint-config-javascript",
   "type": "module",
-  "version": "2.1.12",
+  "version": "1.0.0",
   "description": "ESLint config for AGAROOT",
   "keywords": [
     "agaroot",
     "eslint",
-    "config"
+    "config",
+    "javascript"
   ],
-  "homepage": "https://github.com/agaroot-technologies/eslint-config/blob/main/packages/common/README.md",
+  "homepage": "https://github.com/agaroot-technologies/eslint-config/blob/main/packages/javascript/README.md",
   "bugs": {
     "url": "https://github.com/agaroot-technologies/eslint-config/issues"
   },
@@ -39,15 +40,21 @@
     "build": "pkgroll",
     "lint": "eslint ."
   },
+  "dependencies": {
+    "@eslint/js": "^8.57.0",
+    "globals": "^15.8.0"
+  },
   "devDependencies": {
-    "@agaroot/eslint-config-javascript": "workspace:*",
+    "@agaroot/eslint-config-common": "workspace:*",
     "@tsconfig/strictest": "2.0.5",
     "@types/eslint": "8.56.11",
+    "@types/eslint__js": "8.42.3",
     "eslint": "8.57.0",
     "pkgroll": "2.4.1"
   },
   "peerDependencies": {
+    "@agaroot/eslint-config-common": "workspace:*",
     "eslint": "^8.0.0"
   },
-  "packageManager": "pnpm@9.6.0"
+  "packageManager": "pnpm@8.15.5"
 }
