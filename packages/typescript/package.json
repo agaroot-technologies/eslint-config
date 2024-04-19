@@ -1,5 +1,5 @@
 {
-  "name": "@agaroot/eslint-config-javascript",
+  "name": "@agaroot/eslint-config-typescript",
   "type": "module",
   "version": "1.0.0",
   "description": "ESLint config for AGAROOT",
@@ -7,9 +7,9 @@
     "agaroot",
     "eslint",
     "config",
-    "javascript"
+    "typescript"
   ],
-  "homepage": "https://github.com/agaroot-technologies/eslint-config/blob/main/packages/javascript/README.md",
+  "homepage": "https://github.com/agaroot-technologies/eslint-config/blob/main/packages/typescript/README.md",
   "bugs": {
     "url": "https://github.com/agaroot-technologies/eslint-config/issues"
   },
@@ -41,20 +41,20 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@eslint/js": "^8.57.0",
-    "globals": "^15.8.0"
+    "typescript-eslint": "^7.17.0"
   },
   "devDependencies": {
     "@agaroot/eslint-config-common": "workspace:*",
-    "@agaroot/eslint-config-typescript": "workspace:*",
+    "@agaroot/eslint-config-javascript": "workspace:*",
     "@tsconfig/strictest": "2.0.5",
     "@types/eslint": "8.56.11",
-    "@types/eslint__js": "8.42.3",
+    "@types/node": "20.14.12",
     "eslint": "8.57.0",
     "pkgroll": "2.4.1"
   },
   "peerDependencies": {
     "@agaroot/eslint-config-common": "workspace:*",
+    "@agaroot/eslint-config-javascript": "workspace:*",
     "eslint": "^8.0.0"
   },
   "packageManager": "pnpm@8.15.5"

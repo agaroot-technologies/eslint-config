@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@agaroot/eslint-config-javascript": "workspace:*",
+    "@agaroot/eslint-config-typescript": "workspace:*",
     "@tsconfig/strictest": "2.0.5",
     "@types/eslint": "8.56.11",
     "eslint": "8.57.0",
