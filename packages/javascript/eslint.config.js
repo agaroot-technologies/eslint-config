@@ -1,4 +1,5 @@
 import { common } from '@agaroot/eslint-config-common';
+import { typescript } from '@agaroot/eslint-config-typescript';
 
 import { javascript } from './dist/index.mjs';
 
@@ -6,6 +7,9 @@ import { javascript } from './dist/index.mjs';
 const config = [
   ...common(),
   ...javascript(),
+  ...typescript({
+    tsconfigPath: './tsconfig.json',
+  }),
 ];
 
 export default config;
