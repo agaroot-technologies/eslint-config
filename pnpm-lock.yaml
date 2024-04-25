@@ -108,8 +108,8 @@ importers:
         specifier: workspace:*
         version: link:../common
       '@next/eslint-plugin-next':
-        specifier: 14.2.2
-        version: 14.2.2
+        specifier: 14.2.3
+        version: 14.2.3
       '@typescript-eslint/eslint-plugin':
         specifier: 7.7.1
         version: 7.7.1(@typescript-eslint/parser@7.7.1)(eslint@8.57.0)(typescript@5.2.2)
@@ -503,8 +503,8 @@ packages:
       read-yaml-file: 1.1.0
     dev: true
 
-  /@next/eslint-plugin-next@14.2.2:
-    resolution: {integrity: sha512-q+Ec2648JtBpKiu/FSJm8HAsFXlNvioHeBCbTP12T1SGcHYwhqHULSfQgFkPgHDu3kzNp2Kem4J54bK4rPQ5SQ==}
+  /@next/eslint-plugin-next@14.2.3:
+    resolution: {integrity: sha512-L3oDricIIjgj1AVnRdRor21gI7mShlSwU/1ZGHmqM3LzHhXXhdkrfeNY5zif25Bi5Dd7fiJHsbhoZCHfXYvlAw==}
     dependencies:
       glob: 10.3.10
     dev: true
