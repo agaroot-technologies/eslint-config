@@ -39,7 +39,7 @@
     "eslint-plugin-jest": "27.9.0",
     "eslint-plugin-jest-dom": "5.4.0",
     "eslint-plugin-testing-library": "6.2.2",
-    "eslint-plugin-unused-imports": "3.1.0"
+    "eslint-plugin-unused-imports": "3.2.0"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
