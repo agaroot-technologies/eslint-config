@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-jest
 
+## 2.1.2
+
+### Patch Changes
+
+- [#165](https://github.com/agaroot-technologies/eslint-config/pull/165) [`6f099cb`](https://github.com/agaroot-technologies/eslint-config/commit/6f099cb128092069334b24be96bf916bad7dee6c) Thanks [@renovate](https://github.com/apps/renovate)! - Update dependency eslint-plugin-jest to v28
+
 ## 2.1.1
 
 ### Patch Changes
