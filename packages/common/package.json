@@ -45,5 +45,5 @@
     "eslint-plugin-unicorn": ">=48.x.x <=52.x.x",
     "eslint-plugin-unused-imports": "^3.0.0"
   },
-  "packageManager": "pnpm@9.1.0"
+  "packageManager": "pnpm@9.1.1"
 }
