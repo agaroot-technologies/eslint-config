@@ -47,6 +47,5 @@
   "peerDependencies": {
     "@next/eslint-plugin-next": "^13.0.0 || ^14.0.0",
     "eslint": "^8.0.0"
-  },
-  "packageManager": "pnpm@9.6.0"
+  }
 }

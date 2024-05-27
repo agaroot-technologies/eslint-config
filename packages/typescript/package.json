@@ -56,6 +56,5 @@
     "@agaroot/eslint-config-common": "workspace:*",
     "@agaroot/eslint-config-javascript": "workspace:*",
     "eslint": "^8.0.0"
-  },
-  "packageManager": "pnpm@8.15.5"
+  }
 }
