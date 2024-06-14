@@ -1,12 +1,12 @@
 import eslintPluginImportX from 'eslint-plugin-import-x';
 
-import type { Linter } from 'eslint';
+import type { Configurator } from '@agaroot/eslint-config-definer';
 
-export type ImportFactoryOptions = {
+export type ImportConfiguratorOptions = {
   tsconfigPath: string;
 };
 
-export const importFactory = (options: ImportFactoryOptions): Linter.FlatConfig[] => {
+export const importConfigurator: Configurator<ImportConfiguratorOptions> = options => {
   return [
     {
       name: 'import-x/typescript',

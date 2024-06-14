@@ -3,9 +3,10 @@ import eslint from '@eslint/js';
 // @ts-expect-error
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
+import type { Configurator } from '@agaroot/eslint-config-definer';
 import type { Linter } from 'eslint';
 
-export const javascriptFactory = (): Linter.FlatConfig[] => {
+export const javascriptConfigurator: Configurator = () => {
   return [
     {
       name: 'eslint/recommended',
