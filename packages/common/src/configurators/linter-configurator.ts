@@ -1,6 +1,6 @@
-import type { Linter } from 'eslint';
+import type { Configurator } from '@agaroot/eslint-config-definer';
 
-export const linterFactory = (): Linter.FlatConfig[] => {
+export const linterConfigurator: Configurator = () => {
   return [
     {
       name: 'agaroot/common/linter',

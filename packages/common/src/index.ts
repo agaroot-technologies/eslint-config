@@ -1,11 +1,9 @@
-import { ignoreFactory } from './factories/ignore-factory';
-import { linterFactory } from './factories/linter-factory';
+import { define } from '@agaroot/eslint-config-definer';
 
-import type { Linter } from 'eslint';
+import { ignoreConfigurator } from './configurators/ignore-configurator';
+import { linterConfigurator } from './configurators/linter-configurator';
 
-export const common = (): Linter.FlatConfig[] => {
-  return [
-    ...ignoreFactory(),
-    ...linterFactory(),
-  ];
-};
+export const common = define([
+  ignoreConfigurator,
+  linterConfigurator,
+]);

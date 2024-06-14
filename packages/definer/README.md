@@ -1,8 +1,8 @@
-# @agaroot/eslint-config-typescript
+# @agaroot/eslint-config-definer
 
-[![npm version](https://badge.fury.io/js/@agaroot%2Feslint-config-typescript.svg)](https://www.npmjs.com/package/@agaroot/eslint-config-typescript)
-[![npm download](https://img.shields.io/npm/dm/@agaroot/eslint-config-typescript.svg)](https://www.npmjs.com/package/@agaroot/eslint-config-typescript)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/agaroot-technologies/eslint-config/blob/main/packages/typescript/LICENSE)
+[![npm version](https://badge.fury.io/js/@agaroot%2Feslint-config-definer.svg)](https://www.npmjs.com/package/@agaroot/eslint-config-definer)
+[![npm download](https://img.shields.io/npm/dm/@agaroot/eslint-config-definer.svg)](https://www.npmjs.com/package/@agaroot/eslint-config-definer)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/agaroot-technologies/eslint-config/blob/main/packages/definer/LICENSE)
 [![Github](https://img.shields.io/github/followers/agaroot-technologies?label=Follow&logo=github&style=social)](https://github.com/orgs/agaroot-technologies/followers)
 
 This is a ESLint config commonly inherited by AGAROOT products.
@@ -12,7 +12,10 @@ Use this setting to ensure consistent code writing and maintain high code qualit
 ## 🚀 Installation
 
 ```shell
-npm install -D eslint @agaroot/eslint-config-common @agaroot/eslint-config-definer @agaroot/eslint-config-javascript @agaroot/eslint-config-typescript
+npm install -D eslint @agaroot/eslint-config-common @agaroot/eslint-config-definer @agaroot/eslint-config-javascript
+
+# If you are using TypeScript, install the following package.
+npm install -D @agaroot/eslint-config-typescript
 ```
 
 ## 👏 Getting Started
@@ -25,11 +28,12 @@ import { define } from '@agaroot/eslint-config-definer';
 import { javascript } from '@agaroot/eslint-config-javascript';
 import { typescript } from '@agaroot/eslint-config-typescript';
 
-const config = define([
+const config = define(
   common,
   javascript,
+  // If you are using TypeScript, add the following line.
   typescript,
-]);
+);
 
 export default config({
   tsconfigPath: './tsconfig.json',
@@ -46,4 +50,4 @@ Feel free to check [issues page](https://github.com/agaroot-technologies/eslint-
 
 Copyright © 2023 [AGAROOT TECHNOLOGIES](https://tech.agaroot.co.jp/).
 
-This project is [```MIT```](https://github.com/agaroot-technologies/eslint-config/blob/main/packages/typescript/LICENSE) licensed.
+This project is [```MIT```](https://github.com/agaroot-technologies/eslint-config/blob/main/packages/definer/LICENSE) licensed.

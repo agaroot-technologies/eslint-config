@@ -2,13 +2,14 @@ import process from 'node:process';
 
 import tseslint from 'typescript-eslint';
 
+import type { Configurator } from '@agaroot/eslint-config-definer';
 import type { Linter } from 'eslint';
 
-export type TypescriptFactoryOptions = {
+export type TypescriptConfiguratorOptions = {
   tsconfigPath: string;
 };
 
-export const typescriptFactory = (options: TypescriptFactoryOptions): Linter.FlatConfig[] => {
+export const typescriptConfigurator: Configurator<TypescriptConfiguratorOptions> = options => {
   return [
     ...tseslint.config(
       ...tseslint.configs.recommendedTypeChecked,

@@ -1,15 +1,14 @@
 import { common } from '@agaroot/eslint-config-common';
+import { define } from '@agaroot/eslint-config-definer';
 import { javascript } from '@agaroot/eslint-config-javascript';
+import { typescript } from '@agaroot/eslint-config-typescript';
 
-import { typescript } from './dist/index.mjs';
+const config = define([
+  common,
+  javascript,
+  typescript,
+]);
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-const config = [
-  ...common(),
-  ...javascript(),
-  ...typescript({
-    tsconfigPath: './tsconfig.json',
-  }),
-];
-
-export default config;
+export default config({
+  tsconfigPath: './tsconfig.json',
+});

@@ -1,13 +1,11 @@
-import { globalsFactory } from './factories/globals-factory';
-import { importFactory } from './factories/import-factory';
-import { javascriptFactory } from './factories/javascript-factory';
+import { define } from '@agaroot/eslint-config-definer';
 
-import type { Linter } from 'eslint';
+import { globalsConfigurator } from './configurators/globals-configurator';
+import { importConfigurator } from './configurators/import-configurator';
+import { javascriptConfigurator } from './configurators/javascript-configurator';
 
-export const javascript = (): Linter.FlatConfig[] => {
-  return [
-    ...globalsFactory(),
-    ...importFactory(),
-    ...javascriptFactory(),
-  ];
-};
+export const javascript = define([
+  globalsConfigurator,
+  importConfigurator,
+  javascriptConfigurator,
+]);

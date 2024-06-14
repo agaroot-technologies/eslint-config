@@ -3,9 +3,10 @@ import eslintPluginImportX from 'eslint-plugin-import-x';
 // @ts-expect-error
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports';
 
-import type { ESLint, Linter } from 'eslint';
+import type { Configurator } from '@agaroot/eslint-config-definer';
+import type { ESLint } from 'eslint';
 
-export const importFactory = (): Linter.FlatConfig[] => {
+export const importConfigurator: Configurator = () => {
   return [
     {
       name: 'import-x/recommended',

@@ -1,9 +1,9 @@
 import eslint from '@eslint/js';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
-import type { Linter } from 'eslint';
+import type { Configurator } from '@agaroot/eslint-config-definer';
 
-export const javascriptFactory = (): Linter.FlatConfig[] => {
+export const javascriptConfigurator: Configurator = () => {
   return [
     {
       name: 'eslint/recommended',

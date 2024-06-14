@@ -1,18 +1,10 @@
-import { importFactory} from './factories/import-factory';
-import { typescriptFactory } from './factories/typescript-factory';
+import { define } from '@agaroot/eslint-config-definer';
 
-import type { ImportFactoryOptions } from './factories/import-factory';
-import type { TypescriptFactoryOptions } from './factories/typescript-factory';
-import type { Linter } from 'eslint';
+import { importConfigurator} from './configurators/import-configurator';
+import { typescriptConfigurator } from './configurators/typescript-configurator';
 
-export type TypeScriptOptions = (
-  | ImportFactoryOptions
-  | TypescriptFactoryOptions
-);
 
-export const typescript = (options: TypeScriptOptions): Linter.FlatConfig[] => {
-  return [
-    ...importFactory(options),
-    ...typescriptFactory(options),
-  ];
-};
+export const typescript = define([
+  importConfigurator,
+  typescriptConfigurator,
+]);

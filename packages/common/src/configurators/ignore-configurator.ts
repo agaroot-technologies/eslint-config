@@ -1,6 +1,6 @@
-import type { Linter } from 'eslint';
+import type { Configurator } from '@agaroot/eslint-config-definer';
 
-export const ignoreFactory = (): Linter.FlatConfig[] => {
+export const ignoreConfigurator: Configurator = () => {
   return [
     {
       ignores: [

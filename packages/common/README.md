@@ -12,7 +12,7 @@ Use this setting to ensure consistent code writing and maintain high code qualit
 ## 🚀 Installation
 
 ```shell
-npm install -D eslint @agaroot/eslint-config-common
+npm install -D eslint @agaroot/eslint-config-common @agaroot/eslint-config-definer
 ```
 
 ## 👏 Getting Started
@@ -21,13 +21,13 @@ Create a `eslint.config.js` file in the root directory of your project, and add 
 
 ```js
 import { common } from '@agaroot/eslint-config-common';
+import { define } from '@agaroot/eslint-config-definer';
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-const config = [
-  ...common(),
-];
+const config = define(
+  common,
+);
 
-export default config;
+export default config();
 ```
 
 ## 🤝 Contributing

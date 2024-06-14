@@ -1,8 +1,8 @@
 import g from 'globals';
 
-import type { Linter } from 'eslint';
+import type { Configurator } from '@agaroot/eslint-config-definer';
 
-export const globalsFactory = (): Linter.FlatConfig[] => {
+export const globalsConfigurator: Configurator = () => {
   return [
     {
       name: 'agaroot/javascript/globals',
