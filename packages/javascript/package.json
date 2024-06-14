@@ -43,12 +43,14 @@
   "dependencies": {
     "@eslint/js": "^8.57.0",
     "eslint-plugin-import-x": "^3.1.0",
+    "eslint-plugin-unused-imports": "^3.2.0",
     "globals": "^15.8.0"
   },
   "devDependencies": {
     "@agaroot/eslint-config-common": "workspace:*",
     "@agaroot/eslint-config-typescript": "workspace:*",
     "@tsconfig/strictest": "2.0.5",
+    "@typescript-eslint/eslint-plugin": "7.17.0",
     "@types/eslint": "8.56.11",
     "@types/eslint__js": "8.42.3",
     "eslint": "8.57.0",
