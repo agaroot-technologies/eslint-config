@@ -12,38 +12,45 @@ Use this setting to ensure consistent code writing and maintain high code qualit
 ## 🚀 Installation
 
 ```shell
-$ npm install -D @agaroot/eslint-config-jest-react
+npm install -D eslint @agaroot/eslint-config-common @agaroot/eslint-config-definer @agaroot/eslint-config-javascript @agaroot/eslint-config-jest @agaroot/eslint-config-jest-react @agaroot/eslint-config-react
 
-# Needs install peer dependencies
-$ npm install -D eslint-plugin-jest-dom eslint-plugin-testing-library
+# If you are using TypeScript, install the following package.
+npm install -D @agaroot/eslint-config-typescript
+
+# If you are using Next.js, install the following package.
+npm install -D @agaroot/eslint-config-next
 ```
 
 ## 👏 Getting Started
 
-Create a `.eslintrc.js` file in the root directory of your project, and add `@agaroot/eslint-config-jest-react` to the `extends` array.
-
-The following is the recommended configuration when using TypeScript.
+Create a `eslint.config.js` file in the root directory of your project.
 
 ```js
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
-  root: true,
-  extends: [
-    '@agaroot/eslint-config-common',
-    '@agaroot/eslint-config-jest',
-    '@agaroot/eslint-config-jest-react',
-  ],
-  parserOptions: {
-    project: './tsconfig.json',
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {
-        project: './tsconfig.json',
-      },
-    },
-  },
-};
+import { common } from '@agaroot/eslint-config-common';
+import { define } from '@agaroot/eslint-config-definer';
+import { javascript } from '@agaroot/eslint-config-javascript';
+import { jest } from '@agaroot/eslint-config-jest';
+import { jestReact } from '@agaroot/eslint-config-jest-react';
+import { react } from '@agaroot/eslint-config-jest-react';
+import { next } from '@agaroot/eslint-config-jest-next';
+import { typescript } from '@agaroot/eslint-config-typescript';
+
+const config = define([
+  common,
+  javascript,
+  jest,
+  jestReact,
+  react,
+  // If you are using TypeScript, add the following line.
+  typescript,
+  // If you are using Next.js, add the following line.
+  next,
+]);
+
+export default config({
+  // If you are using TypeScript, add the following line.
+  tsconfigPath: './tsconfig.json',
+});
 ```
 
 ## 🤝 Contributing
