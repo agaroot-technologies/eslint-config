@@ -12,38 +12,37 @@ Use this setting to ensure consistent code writing and maintain high code qualit
 ## 🚀 Installation
 
 ```shell
-$ npm install -D @agaroot/eslint-config-next
+npm install -D eslint @agaroot/eslint-config-common @agaroot/eslint-config-definer @agaroot/eslint-config-javascript @agaroot/eslint-config-next @agaroot/eslint-config-react
 
-# Needs install peer dependencies
-$ npm install -D @next/eslint-plugin-next
+# If you are using TypeScript, install the following package.
+npm install -D @agaroot/eslint-config-typescript
 ```
 
 ## 👏 Getting Started
 
-Create a `.eslintrc.js` file in the root directory of your project, and add `@agaroot/eslint-config-next` to the `extends` array.
-
-The following is the recommended configuration when using TypeScript.
+Create a `eslint.config.js` file in the root directory of your project.
 
 ```js
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
-  root: true,
-  extends: [
-    '@agaroot/eslint-config-common',
-    '@agaroot/eslint-config-react',
-    '@agaroot/eslint-config-next',
-  ],
-  parserOptions: {
-    project: './tsconfig.json',
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {
-        project: './tsconfig.json',
-      },
-    },
-  },
-};
+import { common } from '@agaroot/eslint-config-common';
+import { define } from '@agaroot/eslint-config-definer';
+import { javascript } from '@agaroot/eslint-config-javascript';
+import { next } from '@agaroot/eslint-config-next';
+import { react } from '@agaroot/eslint-config-react';
+import { typescript } from '@agaroot/eslint-config-typescript';
+
+const config = define([
+  common,
+  javascript,
+  next,
+  react,
+  // If you are using TypeScript, add the following line.
+  typescript,
+]);
+
+export default config({
+  // If you are using TypeScript, add the following line.
+  tsconfigPath: './tsconfig.json',
+});
 ```
 
 ## 🤝 Contributing
