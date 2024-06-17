@@ -123,31 +123,41 @@ importers:
         version: 2.4.1(typescript@5.2.2)
 
   packages/jest:
+    dependencies:
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^7.17.0
+        version: 7.17.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2)
+      eslint-plugin-jest:
+        specifier: ^28.6.0
+        version: 28.6.0(@typescript-eslint/eslint-plugin@7.17.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2)
+      globals:
+        specifier: ^15.8.0
+        version: 15.8.0
     devDependencies:
       '@agaroot/eslint-config-common':
         specifier: workspace:*
         version: link:../common
-      '@typescript-eslint/eslint-plugin':
-        specifier: 7.17.0
-        version: 7.17.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2)
-      '@typescript-eslint/parser':
-        specifier: 7.17.0
-        version: 7.17.0(eslint@8.57.0)(typescript@5.2.2)
+      '@agaroot/eslint-config-definer':
+        specifier: workspace:*
+        version: link:../definer
+      '@agaroot/eslint-config-javascript':
+        specifier: workspace:*
+        version: link:../javascript
+      '@agaroot/eslint-config-typescript':
+        specifier: workspace:*
+        version: link:../typescript
+      '@tsconfig/strictest':
+        specifier: 2.0.5
+        version: 2.0.5
+      '@types/eslint':
+        specifier: 8.56.11
+        version: 8.56.11
       eslint:
         specifier: 8.57.0
         version: 8.57.0
-      eslint-import-resolver-typescript:
-        specifier: 3.6.1
-        version: 3.6.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.2.2))(eslint-plugin-import@2.29.1)(eslint@8.57.0)
-      eslint-plugin-import:
-        specifier: 2.29.1
-        version: 2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
-      eslint-plugin-jest:
-        specifier: 28.6.0
-        version: 28.6.0(@typescript-eslint/eslint-plugin@7.17.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2)
-      eslint-plugin-unused-imports:
-        specifier: 3.2.0
-        version: 3.2.0(@typescript-eslint/eslint-plugin@7.17.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)
+      pkgroll:
+        specifier: 2.4.1
+        version: 2.4.1(typescript@5.2.2)
 
   packages/jest-react:
     devDependencies:
