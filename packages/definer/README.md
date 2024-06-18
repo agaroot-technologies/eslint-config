@@ -12,9 +12,17 @@ Use this setting to ensure consistent code writing and maintain high code qualit
 ## 🚀 Installation
 
 ```shell
-npm install -D eslint @agaroot/eslint-config-common @agaroot/eslint-config-definer @agaroot/eslint-config-javascript
+# Install any configs.
+npm install -D eslint @agaroot/eslint-config-common @agaroot/eslint-config-javascript
 
-# If you are using TypeScript, install the following package.
+# Install this package.
+npm install -D @agaroot/eslint-config-definer
+
+# (Recommended) If you want to use the style guide, install the following package.
+# However, this is not necessary if you are using Prettier.
+npm install -D @agaroot/eslint-config-style
+
+# (Optional) If you are using TypeScript, install the following package.
 npm install -D @agaroot/eslint-config-typescript
 ```
 
@@ -27,10 +35,12 @@ import { common } from '@agaroot/eslint-config-common';
 import { define } from '@agaroot/eslint-config-definer';
 import { javascript } from '@agaroot/eslint-config-javascript';
 import { typescript } from '@agaroot/eslint-config-typescript';
+import { style } from '@agaroot/eslint-config-style';
 
 const config = define(
   common,
   javascript,
+  style,
   // If you are using TypeScript, add the following line.
   typescript,
 );
