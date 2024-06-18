@@ -9,7 +9,7 @@ export type TypescriptConfiguratorOptions = {
   tsconfigPath: string;
 };
 
-export const typescriptConfigurator: Configurator<TypescriptConfiguratorOptions> = options => {
+export const typescriptConfigurator: Configurator<TypescriptConfiguratorOptions> = (options) => {
   return [
     ...tseslint.config(
       ...tseslint.configs.recommendedTypeChecked,
@@ -27,11 +27,11 @@ export const typescriptConfigurator: Configurator<TypescriptConfiguratorOptions>
       name: 'agaroot/typescript/rules',
       rules: {
         '@typescript-eslint/consistent-type-imports': ['error', {
-          'prefer': 'type-imports',
+          prefer: 'type-imports',
         }],
         '@typescript-eslint/no-misused-promises': ['error', {
-          'checksVoidReturn': {
-            'attributes': false,
+          checksVoidReturn: {
+            attributes: false,
           },
         }],
         '@typescript-eslint/no-unused-vars': 'off',

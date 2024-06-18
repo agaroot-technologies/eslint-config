@@ -12,7 +12,15 @@ Use this setting to ensure consistent code writing and maintain high code qualit
 ## 🚀 Installation
 
 ```shell
-npm install -D eslint @agaroot/eslint-config-common @agaroot/eslint-config-definer @agaroot/eslint-config-javascript
+# Install peer dependencies.
+npm install -D eslint @agaroot/eslint-config-common @agaroot/eslint-config-definer
+
+# Install this package.
+npm install -D @agaroot/eslint-config-javascript
+
+# (Recommended) If you want to use the style guide, install the following package.
+# However, this is not necessary if you are using Prettier.
+npm install -D @agaroot/eslint-config-style
 ```
 
 ## 👏 Getting Started

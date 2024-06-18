@@ -30,15 +30,15 @@ export const javascriptConfigurator: Configurator = () => {
         'unicorn/no-null': 'off',
         // Loosen some overly strict prevent abbreviation rules.
         'unicorn/prevent-abbreviations': ['error', {
-          'replacements': {
+          replacements: {
             // Allow the use of this abbreviation when defining the types of function arguments in JavaScript, as it is used extensively.
-            'args': false,
+            args: false,
             // Allow the use of this abbreviation when retrieving environment variables in Node.js, as it is used extensively.
-            'env': false,
+            env: false,
             // Allow the use of this abbreviation when defining the types of component properties in React, as it is used extensively.
-            'props': false,
+            props: false,
             // Allow the use of this abbreviation when retrieving DOM references in React, as it is used extensively.
-            'ref': false,
+            ref: false,
           },
         }],
       },
