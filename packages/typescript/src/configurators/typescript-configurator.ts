@@ -2,6 +2,8 @@ import process from 'node:process';
 
 import tseslint from 'typescript-eslint';
 
+import { files } from '../files';
+
 import type { Configurator } from '@agaroot/eslint-config-definer';
 import type { Linter } from 'eslint';
 
@@ -11,11 +13,13 @@ export type TypescriptConfiguratorOptions = {
 
 export const typescriptConfigurator: Configurator<TypescriptConfiguratorOptions> = (options) => {
   return [
-    ...tseslint.config(
-      ...tseslint.configs.recommendedTypeChecked,
-    ) as Linter.FlatConfig[],
+    ...tseslint.configs.recommendedTypeChecked.map((config) => ({
+      files,
+      ...config,
+    })) as Linter.FlatConfig[],
     {
       name: 'agaroot/typescript/parser',
+      files,
       languageOptions: {
         parserOptions: {
           project: options.tsconfigPath,
@@ -25,6 +29,7 @@ export const typescriptConfigurator: Configurator<TypescriptConfiguratorOptions>
     },
     {
       name: 'agaroot/typescript/rules',
+      files,
       rules: {
         '@typescript-eslint/consistent-type-imports': ['error', {
           prefer: 'type-imports',
