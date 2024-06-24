@@ -4,9 +4,9 @@
     "@tsconfig/strictest/tsconfig.json"
   ],
   "compilerOptions": {
-    "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "target": "ES2022"
   }
 }
