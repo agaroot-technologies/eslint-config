@@ -1,5 +1,7 @@
 import eslintPluginImportX from 'eslint-plugin-import-x';
 
+import { files } from '../files';
+
 import type { Configurator } from '@agaroot/eslint-config-definer';
 
 export type ImportConfiguratorOptions = {
@@ -10,10 +12,12 @@ export const importConfigurator: Configurator<ImportConfiguratorOptions> = (opti
   return [
     {
       name: 'import-x/typescript',
+      files,
       ...eslintPluginImportX.configs.typescript,
     },
     {
       name: 'agaroot/typescript/import/settings',
+      files,
       settings: {
         'import-x/parsers': {
           '@typescript-eslint/parser': ['.ts', '.tsx', '.cts', '.mts', '.js', '.mjs'],
