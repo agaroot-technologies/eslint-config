@@ -53,6 +53,7 @@
     "pkgroll": "2.0.2"
   },
   "peerDependencies": {
+    "@agaroot/eslint-config-definer": "workspace:*",
     "eslint": "^8.0.0"
   }
 }

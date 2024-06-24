@@ -60,6 +60,7 @@
   },
   "peerDependencies": {
     "@agaroot/eslint-config-common": "workspace:*",
+    "@agaroot/eslint-config-definer": "workspace:*",
     "@agaroot/eslint-config-javascript": "workspace:*",
     "@agaroot/eslint-config-jest": "workspace:*",
     "@agaroot/eslint-config-next": "workspace:*",

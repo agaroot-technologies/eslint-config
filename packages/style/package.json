@@ -57,6 +57,7 @@
   },
   "peerDependencies": {
     "@agaroot/eslint-config-common": "workspace:*",
+    "@agaroot/eslint-config-definer": "workspace:*",
     "@agaroot/eslint-config-javascript": "workspace:*",
     "@agaroot/eslint-config-typescript": "workspace:*",
     "eslint": "^8.0.0"
