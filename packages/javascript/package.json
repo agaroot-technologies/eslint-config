@@ -1,6 +1,5 @@
 {
   "name": "@agaroot/eslint-config-javascript",
-  "type": "module",
   "version": "1.0.0",
   "description": "ESLint config for AGAROOT",
   "keywords": [
@@ -18,9 +17,7 @@
     "url": "git+https://github.com/agaroot-technologies/eslint-config.git"
   },
   "license": "MIT",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.cts",
+  "type": "module",
   "exports": {
     "require": {
       "types": "./dist/index.d.cts",
@@ -31,6 +28,9 @@
       "default": "./dist/index.mjs"
     }
   },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
   "files": [
     "dist",
     "LICENSE",
@@ -54,9 +54,9 @@
     "@agaroot/eslint-config-style": "workspace:*",
     "@agaroot/eslint-config-typescript": "workspace:*",
     "@tsconfig/strictest": "2.0.5",
-    "@typescript-eslint/eslint-plugin": "7.17.0",
     "@types/eslint": "8.56.11",
     "@types/eslint__js": "8.42.3",
+    "@typescript-eslint/eslint-plugin": "7.17.0",
     "eslint": "8.57.0",
     "pkgroll": "2.4.1"
   },

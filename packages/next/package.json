@@ -1,6 +1,5 @@
 {
   "name": "@agaroot/eslint-config-next",
-  "type": "module",
   "version": "2.1.1",
   "description": "ESLint config for AGAROOT",
   "keywords": [
@@ -23,9 +22,7 @@
     "url": "git+https://github.com/agaroot-technologies/eslint-config.git"
   },
   "license": "MIT",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.cts",
+  "type": "module",
   "exports": {
     "require": {
       "types": "./dist/index.d.cts",
@@ -36,6 +33,9 @@
       "default": "./dist/index.mjs"
     }
   },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
   "files": [
     "dist",
     "LICENSE",
