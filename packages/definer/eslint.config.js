@@ -1,8 +1,8 @@
-import { common } from '@agaroot/eslint-config-common';
-import { define } from '@agaroot/eslint-config-definer';
-import { javascript } from '@agaroot/eslint-config-javascript';
-import { style } from '@agaroot/eslint-config-style';
-import { typescript } from '@agaroot/eslint-config-typescript';
+import { define } from './dist/index.mjs';
+import { common } from '../common/dist/index.mjs';
+import { javascript } from '../javascript/dist/index.mjs';
+import { style } from '../style/dist/index.mjs';
+import { typescript } from '../typescript/dist/index.mjs';
 
 const config = define([
   common,

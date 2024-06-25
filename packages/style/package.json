@@ -45,10 +45,6 @@
     "@stylistic/eslint-plugin": "^2.3.0"
   },
   "devDependencies": {
-    "@agaroot/eslint-config-common": "workspace:*",
-    "@agaroot/eslint-config-javascript": "workspace:*",
-    "@agaroot/eslint-config-style": "workspace:*",
-    "@agaroot/eslint-config-typescript": "workspace:*",
     "@tsconfig/strictest": "2.0.5",
     "@types/eslint": "8.56.11",
     "@types/node": "20.14.12",

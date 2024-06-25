@@ -27,18 +27,6 @@ importers:
         specifier: ^2.16.0
         version: 2.16.0(eslint@8.57.0)
     devDependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:*
-        version: 'link:'
-      '@agaroot/eslint-config-javascript':
-        specifier: workspace:*
-        version: link:../javascript
-      '@agaroot/eslint-config-style':
-        specifier: workspace:*
-        version: link:../style
-      '@agaroot/eslint-config-typescript':
-        specifier: workspace:*
-        version: link:../typescript
       '@tsconfig/strictest':
         specifier: 2.0.5
         version: 2.0.5
@@ -54,21 +42,6 @@ importers:
 
   packages/definer:
     devDependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:*
-        version: link:../common
-      '@agaroot/eslint-config-definer':
-        specifier: workspace:*
-        version: 'link:'
-      '@agaroot/eslint-config-javascript':
-        specifier: workspace:*
-        version: link:../javascript
-      '@agaroot/eslint-config-style':
-        specifier: workspace:*
-        version: link:../style
-      '@agaroot/eslint-config-typescript':
-        specifier: workspace:*
-        version: link:../typescript
       '@tsconfig/strictest':
         specifier: 2.0.5
         version: 2.0.5
@@ -84,6 +57,9 @@ importers:
 
   packages/javascript:
     dependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@agaroot/eslint-config-definer':
         specifier: workspace:*
         version: link:../definer
@@ -103,18 +79,6 @@ importers:
         specifier: ^15.8.0
         version: 15.8.0
     devDependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:*
-        version: link:../common
-      '@agaroot/eslint-config-javascript':
-        specifier: workspace:*
-        version: 'link:'
-      '@agaroot/eslint-config-style':
-        specifier: workspace:*
-        version: link:../style
-      '@agaroot/eslint-config-typescript':
-        specifier: workspace:*
-        version: link:../typescript
       '@tsconfig/strictest':
         specifier: 2.0.5
         version: 2.0.5
@@ -136,9 +100,18 @@ importers:
 
   packages/jest:
     dependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@agaroot/eslint-config-definer':
         specifier: workspace:*
         version: link:../definer
+      '@agaroot/eslint-config-javascript':
+        specifier: workspace:*
+        version: link:../javascript
+      '@agaroot/eslint-config-typescript':
+        specifier: workspace:*
+        version: link:../typescript
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.17.0
         version: 7.17.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2)
@@ -149,18 +122,6 @@ importers:
         specifier: ^15.8.0
         version: 15.8.0
     devDependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:*
-        version: link:../common
-      '@agaroot/eslint-config-javascript':
-        specifier: workspace:*
-        version: link:../javascript
-      '@agaroot/eslint-config-style':
-        specifier: workspace:*
-        version: link:../style
-      '@agaroot/eslint-config-typescript':
-        specifier: workspace:*
-        version: link:../typescript
       '@tsconfig/strictest':
         specifier: 2.0.5
         version: 2.0.5
@@ -176,9 +137,15 @@ importers:
 
   packages/jest-react:
     dependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@agaroot/eslint-config-definer':
         specifier: workspace:*
         version: link:../definer
+      '@agaroot/eslint-config-javascript':
+        specifier: workspace:*
+        version: link:../javascript
       '@agaroot/eslint-config-jest':
         specifier: workspace:*
         version: link:../jest
@@ -188,6 +155,9 @@ importers:
       '@agaroot/eslint-config-react':
         specifier: workspace:*
         version: link:../react
+      '@agaroot/eslint-config-typescript':
+        specifier: workspace:*
+        version: link:../typescript
       eslint-plugin-jest-dom:
         specifier: ^5.4.0
         version: 5.4.0(eslint@8.57.0)
@@ -195,18 +165,6 @@ importers:
         specifier: ^6.2.2
         version: 6.2.2(eslint@8.57.0)(typescript@5.2.2)
     devDependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:*
-        version: link:../common
-      '@agaroot/eslint-config-javascript':
-        specifier: workspace:*
-        version: link:../javascript
-      '@agaroot/eslint-config-style':
-        specifier: workspace:*
-        version: link:../style
-      '@agaroot/eslint-config-typescript':
-        specifier: workspace:*
-        version: link:../typescript
       '@tsconfig/strictest':
         specifier: 2.0.5
         version: 2.0.5
@@ -222,28 +180,25 @@ importers:
 
   packages/next:
     dependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@agaroot/eslint-config-definer':
         specifier: workspace:*
         version: link:../definer
+      '@agaroot/eslint-config-javascript':
+        specifier: workspace:*
+        version: link:../javascript
       '@agaroot/eslint-config-react':
         specifier: workspace:*
         version: link:../react
+      '@agaroot/eslint-config-typescript':
+        specifier: workspace:*
+        version: link:../typescript
       '@next/eslint-plugin-next':
         specifier: ^14.2.5
         version: 14.2.5
     devDependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:*
-        version: link:../common
-      '@agaroot/eslint-config-javascript':
-        specifier: workspace:*
-        version: link:../javascript
-      '@agaroot/eslint-config-style':
-        specifier: workspace:*
-        version: link:../style
-      '@agaroot/eslint-config-typescript':
-        specifier: workspace:*
-        version: link:../typescript
       '@tsconfig/strictest':
         specifier: 2.0.5
         version: 2.0.5
@@ -259,9 +214,18 @@ importers:
 
   packages/react:
     dependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@agaroot/eslint-config-definer':
         specifier: workspace:*
         version: link:../definer
+      '@agaroot/eslint-config-javascript':
+        specifier: workspace:*
+        version: link:../javascript
+      '@agaroot/eslint-config-typescript':
+        specifier: workspace:*
+        version: link:../typescript
       '@eslint/compat':
         specifier: 1.1.1
         version: 1.1.1
@@ -275,18 +239,6 @@ importers:
         specifier: ^4.6.2
         version: 4.6.2(eslint@8.57.0)
     devDependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:*
-        version: link:../common
-      '@agaroot/eslint-config-javascript':
-        specifier: workspace:*
-        version: link:../javascript
-      '@agaroot/eslint-config-style':
-        specifier: workspace:*
-        version: link:../style
-      '@agaroot/eslint-config-typescript':
-        specifier: workspace:*
-        version: link:../typescript
       '@tsconfig/strictest':
         specifier: 2.0.5
         version: 2.0.5
@@ -302,25 +254,22 @@ importers:
 
   packages/style:
     dependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@agaroot/eslint-config-definer':
         specifier: workspace:*
         version: link:../definer
+      '@agaroot/eslint-config-javascript':
+        specifier: workspace:*
+        version: link:../javascript
+      '@agaroot/eslint-config-typescript':
+        specifier: workspace:*
+        version: link:../typescript
       '@stylistic/eslint-plugin':
         specifier: ^2.3.0
         version: 2.3.0(eslint@8.57.0)(typescript@5.2.2)
     devDependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:*
-        version: link:../common
-      '@agaroot/eslint-config-javascript':
-        specifier: workspace:*
-        version: link:../javascript
-      '@agaroot/eslint-config-style':
-        specifier: workspace:*
-        version: 'link:'
-      '@agaroot/eslint-config-typescript':
-        specifier: workspace:*
-        version: link:../typescript
       '@tsconfig/strictest':
         specifier: 2.0.5
         version: 2.0.5
@@ -339,9 +288,15 @@ importers:
 
   packages/typescript:
     dependencies:
+      '@agaroot/eslint-config-common':
+        specifier: workspace:*
+        version: link:../common
       '@agaroot/eslint-config-definer':
         specifier: workspace:*
         version: link:../definer
+      '@agaroot/eslint-config-javascript':
+        specifier: workspace:*
+        version: link:../javascript
       '@typescript-eslint/parser':
         specifier: ^7.17.0
         version: 7.17.0(eslint@8.57.0)(typescript@5.2.2)
@@ -355,18 +310,6 @@ importers:
         specifier: ^7.17.0
         version: 7.17.0(eslint@8.57.0)(typescript@5.2.2)
     devDependencies:
-      '@agaroot/eslint-config-common':
-        specifier: workspace:*
-        version: link:../common
-      '@agaroot/eslint-config-javascript':
-        specifier: workspace:*
-        version: link:../javascript
-      '@agaroot/eslint-config-style':
-        specifier: workspace:*
-        version: link:../style
-      '@agaroot/eslint-config-typescript':
-        specifier: workspace:*
-        version: 'link:'
       '@tsconfig/strictest':
         specifier: 2.0.5
         version: 2.0.5
@@ -869,9 +812,6 @@ packages:
 
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
-
-  '@types/node@20.12.7':
-    resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
 
   '@types/node@20.14.12':
     resolution: {integrity: sha512-r7wNXakLeSsGT0H1AU863vS2wa5wBOK4bWMjZz2wj+8nBx+m5PeIn0k8AloSLpRuiwdRQZwarZqHE4FNArPuJQ==}
@@ -3181,10 +3121,6 @@ snapshots:
   '@types/json5@0.0.29': {}
 
   '@types/node@12.20.55': {}
-
-  '@types/node@20.12.7':
-    dependencies:
-      undici-types: 5.26.5
 
   '@types/node@20.14.12':
     dependencies:
