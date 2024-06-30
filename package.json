@@ -13,6 +13,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "build": "turbo run build",
     "lint": "turbo run lint",
     "version": "changeset",
     "version:apply": "changeset version",

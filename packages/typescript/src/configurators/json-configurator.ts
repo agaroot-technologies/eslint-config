@@ -1,0 +1,153 @@
+import type { Configurator } from '@agaroot/eslint-config-definer';
+
+export const jsonConfigurator: Configurator = () => {
+  return [
+    {
+      // This rule refers to the sort-package-json.
+      // @see: https://github.com/keithamus/sort-package-json/blob/d4bd8e25bdaf1cfd72649721d3e79e554d13f3a5/index.js#L245-L372
+      name: 'agaroot/typescript/json/sort-tsconfig-json',
+      files: ['**/tsconfig.json'],
+      rules: {
+        'jsonc/sort-keys': ['error', {
+          order: [
+            '$schema',
+            'extends',
+            'compilerOptions',
+            'references',
+            'files',
+            'include',
+            'exclude',
+          ],
+          pathPattern: '^$',
+        },
+        {
+          // This rule refers to the tsconfig documentation.
+          // @see: https://www.typescriptlang.org/tsconfig/#compilerOptions
+          order: [
+            /* Type Checking */
+            'allowUnreachableCode',
+            'allowUnusedLabels',
+            'alwaysStrict',
+            'exactOptionalPropertyTypes',
+            'noFallthroughCasesInSwitch',
+            'noImplicitAny',
+            'noImplicitOverride',
+            'noImplicitReturns',
+            'noImplicitThis',
+            'noPropertyAccessFromIndexSignature',
+            'noUncheckedIndexedAccess',
+            'noUnusedLocals',
+            'noUnusedParameters',
+            'strict',
+            'strictBindCallApply',
+            'strictFunctionTypes',
+            'strictNullChecks',
+            'strictPropertyInitialization',
+            'useUnknownInCatchVariables',
+            /* Modules */
+            'allowArbitraryExtensions',
+            'allowImportingTsExtensions',
+            'allowUmdGlobalAccess',
+            'baseUrl',
+            'customConditions',
+            'module',
+            'moduleResolution',
+            'moduleSuffixes',
+            'noResolve',
+            'paths',
+            'resolveJsonModule',
+            'resolvePackageJsonExports',
+            'resolvePackageJsonImports',
+            'rootDir',
+            'rootDirs',
+            'typeRoots',
+            'types',
+            /* Emit */
+            'declaration',
+            'declarationDir',
+            'declarationMap',
+            'downlevelIteration',
+            'emitBOM',
+            'emitDeclarationOnly',
+            'importHelpers',
+            'importsNotUsedAsValues',
+            'inlineSourceMap',
+            'inlineSources',
+            'mapRoot',
+            'newLine',
+            'noEmit',
+            'noEmitHelpers',
+            'noEmitOnError',
+            'outDir',
+            'outFile',
+            'preserveConstEnums',
+            'preserveValueImports',
+            'removeComments',
+            'sourceMap',
+            'sourceRoot',
+            'stripInternal',
+            /* JavaScript Support */
+            'allowJs',
+            'checkJs',
+            'maxNodeModuleJsDepth',
+            /* Editor Support */
+            'disableSizeLimit',
+            'plugins',
+            /* Interop Constraints */
+            'allowSyntheticDefaultImports',
+            'esModuleInterop',
+            'forceConsistentCasingInFileNames',
+            'isolatedModules',
+            'preserveSymlinks',
+            'verbatimModuleSyntax',
+            /* Backwards Compatibility */
+            'charset',
+            'keyofStringsOnly',
+            'noImplicitUseStrict',
+            'noStrictGenericChecks',
+            'out',
+            'suppressExcessPropertyErrors',
+            'suppressImplicitAnyIndexErrors',
+            /* Language and Environment */
+            'emitDecoratorMetadata',
+            'experimentalDecorators',
+            'jsx',
+            'jsxFactory',
+            'jsxFragmentFactory',
+            'jsxImportSource',
+            'lib',
+            'moduleDetection',
+            'noLib',
+            'target',
+            'useDefineForClassFields',
+            /* Compiler Diagnostics */
+            'diagnostics',
+            'explainFiles',
+            'extendedDiagnostics',
+            'generateCpuProfile',
+            'listEmittedFiles',
+            'listFiles',
+            'traceResolution',
+            /* Projects */
+            'composite',
+            'disableReferencedProjectLoad',
+            'disableSolutionSearching',
+            'disableSourceOfProjectReferenceRedirect',
+            'incremental',
+            'tsBuildInfoFile',
+            /* Output Formatting */
+            'noErrorTruncation',
+            'preserveWatchOutput',
+            'pretty',
+            /* Completeness */
+            'skipDefaultLibCheck',
+            'skipLibCheck',
+            /* Watch Options */
+            'assumeChangesOnlyAffectDirectDependencies',
+          ],
+          pathPattern: '^compilerOptions$',
+        }],
+      },
+    },
+  ];
+};
