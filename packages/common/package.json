@@ -34,7 +34,7 @@
     "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-unicorn": "52.0.0",
-    "eslint-plugin-unused-imports": "3.2.0"
+    "eslint-plugin-unused-imports": "4.0.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.0.0 || ^7.0.0",
@@ -43,7 +43,7 @@
     "eslint-import-resolver-typescript": "^3.0.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-unicorn": ">=48.x.x <=52.x.x",
-    "eslint-plugin-unused-imports": "^3.0.0"
+    "eslint-plugin-unused-imports": "^3.0.0 || ^4.0.0"
   },
   "packageManager": "pnpm@9.4.0"
 }
