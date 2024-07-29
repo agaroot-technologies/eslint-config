@@ -1,5 +1,14 @@
 # @agaroot/eslint-config-typescript
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`4dbb003`](https://github.com/agaroot-technologies/eslint-config/commit/4dbb0036c681fcc04148e472f766066749057777), [`4dda458`](https://github.com/agaroot-technologies/eslint-config/commit/4dda458c10298d2422b6e1cade36b00967360783), [`72214ee`](https://github.com/agaroot-technologies/eslint-config/commit/72214eeb41a7c0c8a1c6448c9f5467af6a6d0aab)]:
+  - @agaroot/eslint-config-definer@1.0.3
+  - @agaroot/eslint-config-common@3.0.3
+  - @agaroot/eslint-config-javascript@2.0.3
+
 ## 2.0.2
 
 ### Patch Changes
