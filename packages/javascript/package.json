@@ -1,0 +1,63 @@
+{
+  "name": "@agaroot/eslint-config-javascript",
+  "version": "1.0.0",
+  "description": "ESLint config for AGAROOT",
+  "keywords": [
+    "agaroot",
+    "eslint",
+    "config",
+    "javascript"
+  ],
+  "homepage": "https://github.com/agaroot-technologies/eslint-config/blob/main/packages/javascript/README.md",
+  "bugs": {
+    "url": "https://github.com/agaroot-technologies/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agaroot-technologies/eslint-config.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "pkgroll",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@agaroot/eslint-config-definer": "workspace:*",
+    "@eslint/js": "^8.57.0",
+    "eslint-plugin-import-x": "^3.1.0",
+    "eslint-plugin-unicorn": "^55.0.0",
+    "eslint-plugin-unused-imports": "^3.2.0",
+    "globals": "^15.8.0"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "2.0.5",
+    "@types/eslint": "8.56.11",
+    "@types/eslint__js": "8.42.3",
+    "@typescript-eslint/eslint-plugin": "7.17.0",
+    "eslint": "8.57.0",
+    "pkgroll": "2.4.1"
+  },
+  "peerDependencies": {
+    "@agaroot/eslint-config-common": "workspace:*",
+    "eslint": "^8.0.0"
+  }
+}

@@ -5,9 +5,7 @@
   "keywords": [
     "agaroot",
     "eslint",
-    "config",
-    "javascript",
-    "typescript"
+    "config"
   ],
   "homepage": "https://github.com/agaroot-technologies/eslint-config/blob/main/packages/common/README.md",
   "bugs": {
@@ -18,32 +16,40 @@
     "url": "git+https://github.com/agaroot-technologies/eslint-config.git"
   },
   "license": "MIT",
-  "main": "index.cjs",
+  "type": "module",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
   "files": [
-    "index.cjs",
+    "dist",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint . --ext .js,.cjs"
+    "build": "pkgroll",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@agaroot/eslint-config-definer": "workspace:*",
+    "eslint-plugin-jsonc": "^2.16.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "7.17.0",
-    "@typescript-eslint/parser": "7.17.0",
+    "@tsconfig/strictest": "2.0.5",
+    "@types/eslint": "8.56.11",
     "eslint": "8.57.0",
-    "eslint-import-resolver-typescript": "3.6.1",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-unicorn": "52.0.0",
-    "eslint-plugin-unused-imports": "3.2.0"
+    "pkgroll": "2.4.1"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.0.0 || ^7.0.0",
-    "@typescript-eslint/parser": "^6.0.0 || ^7.0.0",
-    "eslint": "^8.0.0",
-    "eslint-import-resolver-typescript": "^3.0.0",
-    "eslint-plugin-import": "^2.0.0",
-    "eslint-plugin-unicorn": ">=48.x.x <=52.x.x",
-    "eslint-plugin-unused-imports": "^3.0.0"
-  },
-  "packageManager": "pnpm@9.6.0"
+    "eslint": "^8.0.0"
+  }
 }

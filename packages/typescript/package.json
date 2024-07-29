@@ -1,0 +1,62 @@
+{
+  "name": "@agaroot/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "ESLint config for AGAROOT",
+  "keywords": [
+    "agaroot",
+    "eslint",
+    "config",
+    "typescript"
+  ],
+  "homepage": "https://github.com/agaroot-technologies/eslint-config/blob/main/packages/typescript/README.md",
+  "bugs": {
+    "url": "https://github.com/agaroot-technologies/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agaroot-technologies/eslint-config.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "pkgroll",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@agaroot/eslint-config-definer": "workspace:*",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import-x": "^3.1.0",
+    "typescript-eslint": "^7.17.0"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "2.0.5",
+    "@types/eslint": "8.56.11",
+    "@types/node": "20.14.12",
+    "eslint": "8.57.0",
+    "pkgroll": "2.4.1"
+  },
+  "peerDependencies": {
+    "@agaroot/eslint-config-common": "workspace:*",
+    "@agaroot/eslint-config-javascript": "workspace:*",
+    "eslint": "^8.0.0"
+  }
+}

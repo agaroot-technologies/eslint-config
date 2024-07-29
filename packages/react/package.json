@@ -20,32 +20,51 @@
     "url": "git+https://github.com/agaroot-technologies/eslint-config.git"
   },
   "license": "MIT",
-  "main": "index.cjs",
+  "type": "module",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
   "files": [
-    "index.cjs",
+    "dist",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint . --ext .js,.cjs"
+    "build": "pkgroll",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@agaroot/eslint-config-definer": "workspace:*",
+    "@eslint/compat": "1.1.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2"
   },
   "devDependencies": {
-    "@agaroot/eslint-config-common": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "7.17.0",
-    "@typescript-eslint/parser": "7.17.0",
+    "@tsconfig/strictest": "2.0.5",
+    "@types/eslint": "8.56.11",
     "eslint": "8.57.0",
-    "eslint-import-resolver-typescript": "3.6.1",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-jsx-a11y": "6.9.0",
-    "eslint-plugin-react": "7.35.0",
-    "eslint-plugin-react-hooks": "4.6.2",
-    "eslint-plugin-unused-imports": "3.2.0"
+    "pkgroll": "2.4.1"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0",
-    "eslint-plugin-jsx-a11y": "^6.0.0",
-    "eslint-plugin-react": "^7.0.0",
-    "eslint-plugin-react-hooks": "^4.0.0"
+    "@agaroot/eslint-config-common": "workspace:*",
+    "@agaroot/eslint-config-javascript": "workspace:*",
+    "@agaroot/eslint-config-typescript": "workspace:*",
+    "eslint": "^8.0.0"
   },
-  "packageManager": "pnpm@9.6.0"
+  "peerDependenciesMeta": {
+    "@agaroot/eslint-config-typescript": {
+      "optional": true
+    }
+  }
 }
