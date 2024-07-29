@@ -2,12 +2,10 @@ import type { Linter } from 'eslint';
 
 export type Configurator<T = void> =
   T extends void
-    ? () => Linter.FlatConfig[]
-    : (options: T) => Linter.FlatConfig[];
+    ? () => Linter.FlatConfig | Linter.FlatConfig[]
+    : (options: T) => Linter.FlatConfig | Linter.FlatConfig[];
 
-export const define = <T>(configurators: Configurator<T>[]): Configurator<T> => {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error
+export const define = <T>(configurators: Configurator<T>[]): (options: T) => Linter.FlatConfig[] => {
   return (options) => configurators.flatMap((configurator) => {
     return configurator(options);
   });
