@@ -1,5 +1,21 @@
 # @agaroot/eslint-config-jest-react
 
+## 3.0.0
+
+### Major Changes
+
+- [#221](https://github.com/agaroot-technologies/eslint-config/pull/221) [`346e159`](https://github.com/agaroot-technologies/eslint-config/commit/346e159312c1f093b4f18abac3290e1c719233fe) Thanks [@Karibash](https://github.com/Karibash)! - Migrate jest-react config to flat config format
+
+### Patch Changes
+
+- Updated dependencies [[`947b149`](https://github.com/agaroot-technologies/eslint-config/commit/947b14982278c323152ed3599c8ca78d753e7774), [`368db96`](https://github.com/agaroot-technologies/eslint-config/commit/368db9656f4c992735e9c33195ecca022a7bbea7), [`24c0956`](https://github.com/agaroot-technologies/eslint-config/commit/24c09567fa1ba96f84938a00cc400205a2d2add7), [`583d03e`](https://github.com/agaroot-technologies/eslint-config/commit/583d03e0a099c0619f073cefb1820b4d62d4b05d), [`f9c4ae8`](https://github.com/agaroot-technologies/eslint-config/commit/f9c4ae816b80f56e6e2d12aee5cd4ce56f26ab19), [`5adb24f`](https://github.com/agaroot-technologies/eslint-config/commit/5adb24fdfc2e40787f47a99dbe814af5b6300bff), [`a994fe3`](https://github.com/agaroot-technologies/eslint-config/commit/a994fe3c7ff41e4a5ec78a596dec9847a464302c), [`903eb5e`](https://github.com/agaroot-technologies/eslint-config/commit/903eb5e67baa4492450f751d20d3aa048109be35)]:
+  - @agaroot/eslint-config-common@3.0.0
+  - @agaroot/eslint-config-react@3.0.0
+  - @agaroot/eslint-config-next@3.0.0
+  - @agaroot/eslint-config-jest@3.0.0
+  - @agaroot/eslint-config-javascript@2.0.0
+  - @agaroot/eslint-config-typescript@2.0.0
+
 ## 2.1.0
 
 ### Minor Changes
