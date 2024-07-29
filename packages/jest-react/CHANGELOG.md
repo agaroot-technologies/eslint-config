@@ -1,5 +1,18 @@
 # @agaroot/eslint-config-jest-react
 
+## 3.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`98406a5`](https://github.com/agaroot-technologies/eslint-config/commit/98406a55519afabe55e0a2f2fc5a52c771bd3f4f)]:
+  - @agaroot/eslint-config-definer@1.0.2
+  - @agaroot/eslint-config-common@3.0.2
+  - @agaroot/eslint-config-javascript@2.0.2
+  - @agaroot/eslint-config-jest@3.0.2
+  - @agaroot/eslint-config-next@3.0.2
+  - @agaroot/eslint-config-react@3.0.2
+  - @agaroot/eslint-config-typescript@2.0.2
+
 ## 3.0.1
 
 ### Patch Changes
