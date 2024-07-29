@@ -1,6 +1,6 @@
 {
   "name": "@agaroot/eslint-config-common",
-  "version": "2.1.12",
+  "version": "3.0.0",
   "description": "ESLint config for AGAROOT",
   "keywords": [
     "agaroot",

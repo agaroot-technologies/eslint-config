@@ -1,5 +1,21 @@
 # @agaroot/eslint-config-common
 
+## 3.0.0
+
+### Major Changes
+
+- [#221](https://github.com/agaroot-technologies/eslint-config/pull/221) [`368db96`](https://github.com/agaroot-technologies/eslint-config/commit/368db9656f4c992735e9c33195ecca022a7bbea7) Thanks [@Karibash](https://github.com/Karibash)! - Remove JavaScript and TypeScript rules from the common config
+
+- [#221](https://github.com/agaroot-technologies/eslint-config/pull/221) [`a994fe3`](https://github.com/agaroot-technologies/eslint-config/commit/a994fe3c7ff41e4a5ec78a596dec9847a464302c) Thanks [@Karibash](https://github.com/Karibash)! - Migrate common config to flat config format
+
+### Minor Changes
+
+- [#221](https://github.com/agaroot-technologies/eslint-config/pull/221) [`947b149`](https://github.com/agaroot-technologies/eslint-config/commit/947b14982278c323152ed3599c8ca78d753e7774) Thanks [@Karibash](https://github.com/Karibash)! - Add a eslint-plugin-jsonc
+
+- [#221](https://github.com/agaroot-technologies/eslint-config/pull/221) [`f9c4ae8`](https://github.com/agaroot-technologies/eslint-config/commit/f9c4ae816b80f56e6e2d12aee5cd4ce56f26ab19) Thanks [@Karibash](https://github.com/Karibash)! - Add linter options
+
+- [#221](https://github.com/agaroot-technologies/eslint-config/pull/221) [`903eb5e`](https://github.com/agaroot-technologies/eslint-config/commit/903eb5e67baa4492450f751d20d3aa048109be35) Thanks [@Karibash](https://github.com/Karibash)! - Add file ignore settings
+
 ## 2.1.12
 
 ### Patch Changes
