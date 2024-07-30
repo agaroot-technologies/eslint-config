@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-definer
 
+## 1.0.4
+
+### Patch Changes
+
+- [#247](https://github.com/agaroot-technologies/eslint-config/pull/247) [`d00880c`](https://github.com/agaroot-technologies/eslint-config/commit/d00880c8d31cadeb0f0cb226d3b51c7cae6ceabe) Thanks [@Karibash](https://github.com/Karibash)! - Make the options be merged when options of different types are passed
+
 ## 1.0.3
 
 ### Patch Changes

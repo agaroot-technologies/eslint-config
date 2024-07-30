@@ -1,5 +1,16 @@
 # @agaroot/eslint-config-next
 
+## 3.0.4
+
+### Patch Changes
+
+- Updated dependencies [[`d00880c`](https://github.com/agaroot-technologies/eslint-config/commit/d00880c8d31cadeb0f0cb226d3b51c7cae6ceabe)]:
+  - @agaroot/eslint-config-definer@1.0.4
+  - @agaroot/eslint-config-common@3.0.4
+  - @agaroot/eslint-config-javascript@2.0.4
+  - @agaroot/eslint-config-react@3.0.4
+  - @agaroot/eslint-config-typescript@2.0.4
+
 ## 3.0.3
 
 ### Patch Changes
