@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-definer
 
+## 1.0.5
+
+### Patch Changes
+
+- [#257](https://github.com/agaroot-technologies/eslint-config/pull/257) [`916326c`](https://github.com/agaroot-technologies/eslint-config/commit/916326c6fb6a08df327380e9e246a100e673ce2b) Thanks [@Karibash](https://github.com/Karibash)! - Make it impossible to return a single config
+
 ## 1.0.4
 
 ### Patch Changes
