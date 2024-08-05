@@ -10,8 +10,8 @@ export type MergeOptionTypes<T extends any[]> = UnionToIntersection<ExtractOptio
 
 export type Configurator<T = void> =
   T extends void
-    ? (() => Linter.FlatConfig | Linter.FlatConfig[])
-    : ((options: T) => Linter.FlatConfig | Linter.FlatConfig[]);
+    ? (() => Linter.FlatConfig[])
+    : ((options: T) => Linter.FlatConfig[]);
 
 export const define = <T extends Configurator<any>[]>(
   configurators: T,
