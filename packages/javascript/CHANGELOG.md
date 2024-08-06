@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-javascript
 
+## 2.0.6
+
+### Patch Changes
+
+- [#259](https://github.com/agaroot-technologies/eslint-config/pull/259) [`31728e9`](https://github.com/agaroot-technologies/eslint-config/commit/31728e91038b9dc3e6327b27485552c8beaaf0c8) Thanks [@Karibash](https://github.com/Karibash)! - Add a language option
+
 ## 2.0.5
 
 ### Patch Changes
