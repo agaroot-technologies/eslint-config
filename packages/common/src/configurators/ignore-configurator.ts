@@ -22,6 +22,10 @@ export const ignoreConfigurator: Configurator = () => {
         // Cache directories
         '**/.swc',
         '**/.turbo',
+
+        // AWS CDK
+        '**/cdk.out',
+        '**/cdk.context.json',
       ],
     },
   ];
