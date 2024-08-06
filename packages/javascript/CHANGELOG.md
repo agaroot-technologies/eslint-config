@@ -1,5 +1,12 @@
 # @agaroot/eslint-config-javascript
 
+## 2.0.7
+
+### Patch Changes
+
+- Updated dependencies [[`7974b86`](https://github.com/agaroot-technologies/eslint-config/commit/7974b868e65a2836de551f2537ea4ddda2ca9f51)]:
+  - @agaroot/eslint-config-common@3.0.6
+
 ## 2.0.6
 
 ### Patch Changes
