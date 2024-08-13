@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-typescript
 
+## 2.0.8
+
+### Patch Changes
+
+- [#272](https://github.com/agaroot-technologies/eslint-config/pull/272) [`bf101ff`](https://github.com/agaroot-technologies/eslint-config/commit/bf101ff380a17b1a432e9e8641f64ffba2ebc4fe) Thanks [@Karibash](https://github.com/Karibash)! - Fix a bug that the rules for targeting test files were not reflected correctly
+
 ## 2.0.7
 
 ### Patch Changes
