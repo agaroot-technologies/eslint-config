@@ -45,8 +45,8 @@ export const typescriptConfigurator: Configurator<TypescriptConfiguratorOptions>
     {
       name: 'agaroot/typescript/rules/test',
       files: [
-        '*.test.{ts,tsx}',
-        '**/__tests__/**/*.{ts,tsx}',
+        '**/*.test.*',
+        '**/__tests__/**/*',
       ],
       rules: {
         '@typescript-eslint/ban-ts-comment': 'off',
