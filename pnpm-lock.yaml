@@ -31,8 +31,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@types/eslint':
-        specifier: 8.56.11
-        version: 8.56.11
+        specifier: 8.56.12
+        version: 8.56.12
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -46,8 +46,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@types/eslint':
-        specifier: 8.56.11
-        version: 8.56.11
+        specifier: 8.56.12
+        version: 8.56.12
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -83,8 +83,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@types/eslint':
-        specifier: 8.56.11
-        version: 8.56.11
+        specifier: 8.56.12
+        version: 8.56.12
       '@types/eslint__js':
         specifier: 8.42.3
         version: 8.42.3
@@ -126,8 +126,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@types/eslint':
-        specifier: 8.56.11
-        version: 8.56.11
+        specifier: 8.56.12
+        version: 8.56.12
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -169,8 +169,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@types/eslint':
-        specifier: 8.56.11
-        version: 8.56.11
+        specifier: 8.56.12
+        version: 8.56.12
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -203,8 +203,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@types/eslint':
-        specifier: 8.56.11
-        version: 8.56.11
+        specifier: 8.56.12
+        version: 8.56.12
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -243,8 +243,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@types/eslint':
-        specifier: 8.56.11
-        version: 8.56.11
+        specifier: 8.56.12
+        version: 8.56.12
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -274,8 +274,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@types/eslint':
-        specifier: 8.56.11
-        version: 8.56.11
+        specifier: 8.56.12
+        version: 8.56.12
       '@types/node':
         specifier: 20.16.1
         version: 20.16.1
@@ -314,8 +314,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@types/eslint':
-        specifier: 8.56.11
-        version: 8.56.11
+        specifier: 8.56.12
+        version: 8.56.12
       '@types/node':
         specifier: 20.16.1
         version: 20.16.1
@@ -799,8 +799,8 @@ packages:
   '@tsconfig/strictest@2.0.5':
     resolution: {integrity: sha512-ec4tjL2Rr0pkZ5hww65c+EEPYwxOi4Ryv+0MtjeaSQRJyq322Q27eOQiFbuNgw2hpL4hB1/W/HBGk3VKS43osg==}
 
-  '@types/eslint@8.56.11':
-    resolution: {integrity: sha512-sVBpJMf7UPo/wGecYOpk2aQya2VUGeHhe38WG7/mN5FufNSubf5VT9Uh9Uyp8/eLJpu1/tuhJ/qTo4mhSB4V4Q==}
+  '@types/eslint@8.56.12':
+    resolution: {integrity: sha512-03ruubjWyOHlmljCVoxSuNDdmfZDzsrrz0P2LeJsOXr+ZwFQ+0yQIwNCwt/GYhV7Z31fgtXJTAEs+FYlEL851g==}
 
   '@types/eslint@9.6.0':
     resolution: {integrity: sha512-gi6WQJ7cHRgZxtkQEoyHMppPjq9Kxo5Tjn2prSKDSmZrCz8TZ3jSRCeTJm+WoM+oB0WG37bRqLzaaU3q7JypGg==}
@@ -3192,7 +3192,7 @@ snapshots:
 
   '@tsconfig/strictest@2.0.5': {}
 
-  '@types/eslint@8.56.11':
+  '@types/eslint@8.56.12':
     dependencies:
       '@types/estree': 1.0.5
       '@types/json-schema': 7.0.15
@@ -3204,7 +3204,7 @@ snapshots:
 
   '@types/eslint__js@8.42.3':
     dependencies:
-      '@types/eslint': 8.56.11
+      '@types/eslint': 8.56.12
 
   '@types/estree@1.0.5': {}
 
