@@ -1,5 +1,11 @@
 # @agaroot/eslint-config-style
 
+## 2.0.9
+
+### Patch Changes
+
+- [#297](https://github.com/agaroot-technologies/eslint-config/pull/297) [`0b2ba6e`](https://github.com/agaroot-technologies/eslint-config/commit/0b2ba6e2c35a9a1a35460d62b8fb937cb5a41c3e) Thanks [@Karibash](https://github.com/Karibash)! - Make some changes to the rules regarding code style
+
 ## 2.0.8
 
 ### Patch Changes
