@@ -38,11 +38,12 @@
   ],
   "scripts": {
     "build": "pkgroll",
-    "lint": "eslint ."
+    "lint:code": "eslint .",
+    "lint:type": "tsc --noEmit"
   },
   "dependencies": {
     "@agaroot/eslint-config-definer": "workspace:*",
-    "@stylistic/eslint-plugin": "^2.3.0"
+    "@stylistic/eslint-plugin": "~2.3.0"
   },
   "devDependencies": {
     "@tsconfig/strictest": "2.0.5",
