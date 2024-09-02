@@ -14,7 +14,8 @@
   "license": "MIT",
   "scripts": {
     "build": "turbo run build",
-    "lint": "turbo run lint",
+    "lint:code": "turbo run lint:code",
+    "lint:type": "turbo run lint:type",
     "version": "changeset",
     "version:apply": "changeset version",
     "version:publish": "changeset publish"

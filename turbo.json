@@ -9,6 +9,25 @@
         "dist/**"
       ]
     },
-    "lint": {}
+    "lint:code": {
+      "dependsOn": [
+        "@agaroot/eslint-config-definer#build",
+        "@agaroot/eslint-config-common#build",
+        "@agaroot/eslint-config-javascript#build",
+        "@agaroot/eslint-config-typescript#build",
+        "@agaroot/eslint-config-style#build",
+        "^build"
+      ]
+    },
+    "lint:type": {
+      "dependsOn": [
+        "@agaroot/eslint-config-definer#build",
+        "@agaroot/eslint-config-common#build",
+        "@agaroot/eslint-config-javascript#build",
+        "@agaroot/eslint-config-typescript#build",
+        "@agaroot/eslint-config-style#build",
+        "^build"
+      ]
+    }
   }
 }
