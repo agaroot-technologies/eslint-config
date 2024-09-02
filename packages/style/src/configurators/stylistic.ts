@@ -19,5 +19,12 @@ export const stylistic: Configurator = () => {
         commaDangle: 'always-multiline',
       }),
     },
+    {
+      name: 'agaroot/stylistic/rules',
+      rules: {
+        '@stylistic/jsx-one-expression-per-line': ['error', { allow: 'single-line' }],
+        '@stylistic/multiline-ternary': 'off',
+      },
+    },
   ];
 };
