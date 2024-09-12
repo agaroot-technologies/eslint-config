@@ -53,7 +53,7 @@
     "@tsconfig/strictest": "2.0.5",
     "@types/eslint": "8.56.12",
     "eslint": "8.57.0",
-    "pkgroll": "2.4.2"
+    "pkgroll": "2.4.3"
   },
   "peerDependencies": {
     "@agaroot/eslint-config-common": "workspace:*",
