@@ -37,8 +37,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.4.3
-        version: 2.4.3(typescript@5.2.2)
+        specifier: 2.5.0
+        version: 2.5.0(typescript@5.2.2)
 
   packages/definer:
     devDependencies:
@@ -52,8 +52,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.4.3
-        version: 2.4.3(typescript@5.2.2)
+        specifier: 2.5.0
+        version: 2.5.0(typescript@5.2.2)
 
   packages/javascript:
     dependencies:
@@ -95,8 +95,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.4.3
-        version: 2.4.3(typescript@5.2.2)
+        specifier: 2.5.0
+        version: 2.5.0(typescript@5.2.2)
 
   packages/jest:
     dependencies:
@@ -132,8 +132,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.4.3
-        version: 2.4.3(typescript@5.2.2)
+        specifier: 2.5.0
+        version: 2.5.0(typescript@5.2.2)
 
   packages/jest-react:
     dependencies:
@@ -175,8 +175,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.4.3
-        version: 2.4.3(typescript@5.2.2)
+        specifier: 2.5.0
+        version: 2.5.0(typescript@5.2.2)
 
   packages/next:
     dependencies:
@@ -209,8 +209,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.4.3
-        version: 2.4.3(typescript@5.2.2)
+        specifier: 2.5.0
+        version: 2.5.0(typescript@5.2.2)
 
   packages/react:
     dependencies:
@@ -249,8 +249,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.4.3
-        version: 2.4.3(typescript@5.2.2)
+        specifier: 2.5.0
+        version: 2.5.0(typescript@5.2.2)
 
   packages/style:
     dependencies:
@@ -283,8 +283,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.4.3
-        version: 2.4.3(typescript@5.2.2)
+        specifier: 2.5.0
+        version: 2.5.0(typescript@5.2.2)
 
   packages/typescript:
     dependencies:
@@ -323,8 +323,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.4.3
-        version: 2.4.3(typescript@5.2.2)
+        specifier: 2.5.0
+        version: 2.5.0(typescript@5.2.2)
 
 packages:
 
@@ -2173,8 +2173,8 @@ packages:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
 
-  pkgroll@2.4.3:
-    resolution: {integrity: sha512-x61KzqWojsuDJJwtxwI+aH2QEGhixLg6y9NmahJI+Uwk0jzC7nJDkDSRjAmgb2ET+Wx8J488EsGrlK7NxN80Cw==}
+  pkgroll@2.5.0:
+    resolution: {integrity: sha512-nIbxukMp9i63is1Aq8wIHZcNcJyZJRZ340HF7yP3y+TBZ5P34ARI67dBChvCz4DKPaEZu8hRHM+mnDw3G471uA==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -4762,7 +4762,7 @@ snapshots:
 
   pify@4.0.1: {}
 
-  pkgroll@2.4.3(typescript@5.2.2):
+  pkgroll@2.5.0(typescript@5.2.2):
     dependencies:
       '@rollup/plugin-alias': 5.1.0(rollup@4.19.1)
       '@rollup/plugin-commonjs': 26.0.1(rollup@4.19.1)
