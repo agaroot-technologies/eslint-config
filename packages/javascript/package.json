@@ -54,7 +54,7 @@
     "@types/eslint": "8.56.12",
     "@types/eslint__js": "8.42.3",
     "@typescript-eslint/eslint-plugin": "7.18.0",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "pkgroll": "2.5.0"
   },
   "peerDependencies": {
