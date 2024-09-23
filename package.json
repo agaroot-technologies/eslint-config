@@ -25,5 +25,5 @@
     "@changesets/cli": "2.27.8",
     "turbo": "2.1.2"
   },
-  "packageManager": "pnpm@9.10.0"
+  "packageManager": "pnpm@9.11.0"
 }
