@@ -277,8 +277,8 @@ importers:
         specifier: 8.56.12
         version: 8.56.12
       '@types/node':
-        specifier: 20.16.9
-        version: 20.16.9
+        specifier: 20.16.10
+        version: 20.16.10
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -317,8 +317,8 @@ importers:
         specifier: 8.56.12
         version: 8.56.12
       '@types/node':
-        specifier: 20.16.9
-        version: 20.16.9
+        specifier: 20.16.10
+        version: 20.16.10
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -817,8 +817,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@20.16.9':
-    resolution: {integrity: sha512-rkvIVJxsOfBejxK7I0FO5sa2WxFmJCzoDwcd88+fq/CUfynNywTo/1/T6hyFz22CyztsnLS9nVlHOnTI36RH5w==}
+  '@types/node@20.16.10':
+    resolution: {integrity: sha512-vQUKgWTjEIRFCvK6CyriPH3MZYiYlNy0fKiEYHWbcoWLEgs4opurGGKlebrTLqdSMIbXImH6XExNiIyNUv3WpA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -3149,7 +3149,7 @@ snapshots:
 
   '@types/node@12.20.55': {}
 
-  '@types/node@20.16.9':
+  '@types/node@20.16.10':
     dependencies:
       undici-types: 6.19.6
 
